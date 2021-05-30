@@ -1,0 +1,256 @@
+t=2021-05-23T09:24:00+0300 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2021-05-24T12:23:25+0300 lvl=info msg="Starting Grafana" logger=server version=7.5.7 commit=91de51771c branch=HEAD compiled=2021-05-17T22:16:45+0300
+t=2021-05-24T12:23:25+0300 lvl=info msg="Config loaded from" logger=settings file=C:\\FinalProject\\grafana-7.5.7/conf/defaults.ini
+t=2021-05-24T12:23:25+0300 lvl=info msg="Path Home" logger=settings path=C:\\FinalProject\\grafana-7.5.7
+t=2021-05-24T12:23:25+0300 lvl=info msg="Path Data" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data
+t=2021-05-24T12:23:25+0300 lvl=info msg="Path Logs" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data\\log
+t=2021-05-24T12:23:25+0300 lvl=info msg="Path Plugins" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data\\plugins
+t=2021-05-24T12:23:25+0300 lvl=info msg="Path Provisioning" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\conf\\provisioning
+t=2021-05-24T12:23:25+0300 lvl=info msg="App mode production" logger=settings
+t=2021-05-24T12:23:25+0300 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2021-05-24T12:23:25+0300 lvl=warn msg="SQLite database file has broader permissions than it should" logger=sqlstore path=C:\\FinalProject\\grafana-7.5.7\\data\\grafana.db mode=-rw-rw-rw- expected=-rw-r-----
+t=2021-05-24T12:23:25+0300 lvl=info msg="Starting DB migrations" logger=migrator
+t=2021-05-24T12:23:25+0300 lvl=info msg="migrations completed" logger=migrator performed=0 skipped=279 duration=1.6166ms
+t=2021-05-24T12:23:25+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2021-05-24T12:23:25+0300 lvl=info msg="Registering plugin" logger=plugins id=input
+t=2021-05-24T12:23:26+0300 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2021-05-24T13:44:13+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=22 size=32866 referer=http://localhost:3000/api/users
+t=2021-05-24T13:45:16+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/users status=401 remote_addr=127.0.0.1 time_ms=0 size=26 referer=
+t=2021-05-24T13:45:27+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/users status=401 remote_addr=127.0.0.1 time_ms=0 size=26 referer=
+t=2021-05-24T13:52:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/ status=404 remote_addr=[::1] time_ms=58 size=23 referer=
+t=2021-05-24T13:55:22+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/ status=404 remote_addr=[::1] time_ms=1 size=23 referer=
+t=2021-05-24T14:08:15+0300 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2021-05-24T14:08:15+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=27 size=29 referer=http://localhost:3000/profile
+t=2021-05-24T14:08:29+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/api/frontend-metrics status=401 remote_addr=[::1] time_ms=0 size=26 referer=http://localhost:3000/login
+t=2021-05-24T14:08:29+0300 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="user not found" remote_addr=[::1]
+t=2021-05-24T14:08:29+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ms=40 size=42 referer=http://localhost:3000/login
+t=2021-05-24T14:08:34+0300 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2021-05-24T14:08:56+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/user/password/reset status=400 remote_addr=[::1] time_ms=40 size=52 referer=http://localhost:3000/login
+t=2021-05-24T14:16:58+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T14:16:58+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/0 status=404 remote_addr=127.0.0.1 time_ms=66 size=28 referer=
+t=2021-05-24T14:17:51+0300 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2021-05-24T14:17:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=17 size=29 referer=http://localhost:3000/
+t=2021-05-24T14:18:01+0300 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="invalid username or password" remote_addr=[::1]
+t=2021-05-24T14:18:01+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ms=54 size=42 referer=http://localhost:3000/login
+t=2021-05-24T14:18:04+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/api/frontend-metrics status=401 remote_addr=[::1] time_ms=0 size=26 referer=http://localhost:3000/login
+t=2021-05-24T14:18:06+0300 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2021-05-24T14:18:24+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/user/password/reset status=400 remote_addr=[::1] time_ms=54 size=52 referer=http://localhost:3000/login
+t=2021-05-24T14:18:47+0300 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2021-05-24T14:18:47+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=19 size=29 referer="http://localhost:3000/?orgId=1"
+t=2021-05-24T14:18:55+0300 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2021-05-24T14:19:51+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T14:19:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/0 status=404 remote_addr=127.0.0.1 time_ms=62 size=28 referer=
+t=2021-05-24T14:21:01+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T14:21:01+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/0 status=404 remote_addr=127.0.0.1 time_ms=190 size=28 referer=
+t=2021-05-24T14:21:15+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T14:21:15+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/0 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-24T14:21:24+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/id/0 status=404 remote_addr=[::1] time_ms=3 size=23 referer=
+t=2021-05-24T14:21:30+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T14:21:30+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path="/api/teams/id=0" status=404 remote_addr=[::1] time_ms=2 size=28 referer=
+t=2021-05-24T14:21:35+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams status=404 remote_addr=[::1] time_ms=3 size=23 referer=
+t=2021-05-24T14:21:38+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T14:27:14+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/0 status=404 remote_addr=127.0.0.1 time_ms=69 size=23 referer=
+t=2021-05-24T14:27:40+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/0 status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T14:27:44+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1 status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T14:27:53+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T14:27:53+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/0 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-24T14:29:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1 status=404 remote_addr=127.0.0.1 time_ms=51 size=23 referer=
+t=2021-05-24T15:32:13+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1 status=404 remote_addr=[::1] time_ms=17 size=23 referer=
+t=2021-05-24T15:32:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1 status=404 remote_addr=[::1] time_ms=3 size=23 referer=
+t=2021-05-24T15:32:26+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1/ status=404 remote_addr=[::1] time_ms=4 size=23 referer=
+t=2021-05-24T15:49:50+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-24T15:49:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=47 size=29 referer=
+t=2021-05-24T16:19:23+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:19:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=82 size=28 referer=
+t=2021-05-24T16:19:23+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:19:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=44 size=28 referer=
+t=2021-05-24T16:19:23+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:19:23+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/1 status=500 remote_addr=127.0.0.1 time_ms=49 size=35 referer=
+t=2021-05-24T16:19:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=46 size=49 referer=
+t=2021-05-24T16:19:59+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:19:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=42 size=28 referer=
+t=2021-05-24T16:19:59+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-24T16:19:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=80 size=29 referer=
+t=2021-05-24T16:19:59+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:19:59+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/1 status=500 remote_addr=127.0.0.1 time_ms=60 size=35 referer=
+t=2021-05-24T16:19:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=82 size=49 referer=
+t=2021-05-24T16:23:57+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:23:57+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=41 size=28 referer=
+t=2021-05-24T16:23:57+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:23:57+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=36 size=28 referer=
+t=2021-05-24T16:23:57+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:23:57+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/1 status=500 remote_addr=127.0.0.1 time_ms=38 size=35 referer=
+t=2021-05-24T16:23:57+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=42 size=49 referer=
+t=2021-05-24T16:26:57+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:26:57+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=53 size=28 referer=
+t=2021-05-24T16:26:58+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:26:58+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=116 size=28 referer=
+t=2021-05-24T16:28:12+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:28:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=16 size=28 referer=
+t=2021-05-24T16:28:17+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:28:17+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/2 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-24T16:28:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/search/1 status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T16:28:27+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:28:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=4 size=28 referer=
+t=2021-05-24T16:29:21+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:29:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=18 size=28 referer=
+t=2021-05-24T16:29:25+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/ status=404 remote_addr=[::1] time_ms=15 size=23 referer=
+t=2021-05-24T16:29:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T16:31:12+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:31:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=37 size=28 referer=
+t=2021-05-24T16:33:46+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:33:46+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=42 size=28 referer=
+t=2021-05-24T16:33:46+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:33:46+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/2 status=404 remote_addr=127.0.0.1 time_ms=51 size=28 referer=
+t=2021-05-24T16:33:46+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:33:46+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/2 status=500 remote_addr=127.0.0.1 time_ms=55 size=35 referer=
+t=2021-05-24T16:33:46+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/2 status=404 remote_addr=127.0.0.1 time_ms=53 size=49 referer=
+t=2021-05-24T16:36:51+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:36:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=39 size=28 referer=
+t=2021-05-24T16:36:51+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:36:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=48 size=28 referer=
+t=2021-05-24T16:36:51+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:36:51+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/1 status=500 remote_addr=127.0.0.1 time_ms=50 size=35 referer=
+t=2021-05-24T16:36:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=48 size=49 referer=
+t=2021-05-24T16:38:13+0300 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2021-05-24T16:38:13+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=24 size=29 referer=http://localhost:3000/org/teams
+t=2021-05-24T16:38:18+0300 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2021-05-24T16:39:51+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:39:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=58 size=28 referer=
+t=2021-05-24T16:39:51+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:39:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=66 size=28 referer=
+t=2021-05-24T16:39:51+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:39:51+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/1 status=500 remote_addr=127.0.0.1 time_ms=58 size=35 referer=
+t=2021-05-24T16:39:52+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=40 size=49 referer=
+t=2021-05-24T16:45:23+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:45:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=127.0.0.1 time_ms=49 size=28 referer=
+t=2021-05-24T16:45:33+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:45:33+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=7 size=28 referer=
+t=2021-05-24T16:45:38+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/ status=404 remote_addr=[::1] time_ms=3 size=23 referer=
+t=2021-05-24T16:45:42+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/ status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-24T16:46:08+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:46:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-24T16:52:38+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-24T16:52:38+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-24T16:57:02+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-24T16:57:02+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=56 size=29 referer=
+t=2021-05-24T16:59:27+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:59:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/14 status=404 remote_addr=127.0.0.1 time_ms=43 size=28 referer=
+t=2021-05-24T16:59:27+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:59:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/14 status=404 remote_addr=127.0.0.1 time_ms=39 size=28 referer=
+t=2021-05-24T16:59:27+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-24T16:59:27+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/14 status=500 remote_addr=127.0.0.1 time_ms=40 size=35 referer=
+t=2021-05-24T16:59:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/14 status=404 remote_addr=127.0.0.1 time_ms=38 size=49 referer=
+t=2021-05-24T17:17:07+0300 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2021-05-27T09:59:22+0300 lvl=info msg="Starting Grafana" logger=server version=7.5.7 commit=91de51771c branch=HEAD compiled=2021-05-17T22:16:45+0300
+t=2021-05-27T09:59:22+0300 lvl=info msg="Config loaded from" logger=settings file=C:\\FinalProject\\grafana-7.5.7/conf/defaults.ini
+t=2021-05-27T09:59:22+0300 lvl=info msg="Path Home" logger=settings path=C:\\FinalProject\\grafana-7.5.7
+t=2021-05-27T09:59:22+0300 lvl=info msg="Path Data" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data
+t=2021-05-27T09:59:22+0300 lvl=info msg="Path Logs" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data\\log
+t=2021-05-27T09:59:22+0300 lvl=info msg="Path Plugins" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\data\\plugins
+t=2021-05-27T09:59:22+0300 lvl=info msg="Path Provisioning" logger=settings path=C:\\FinalProject\\grafana-7.5.7\\conf\\provisioning
+t=2021-05-27T09:59:22+0300 lvl=info msg="App mode production" logger=settings
+t=2021-05-27T09:59:23+0300 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2021-05-27T09:59:23+0300 lvl=warn msg="SQLite database file has broader permissions than it should" logger=sqlstore path=C:\\FinalProject\\grafana-7.5.7\\data\\grafana.db mode=-rw-rw-rw- expected=-rw-r-----
+t=2021-05-27T09:59:23+0300 lvl=info msg="Starting DB migrations" logger=migrator
+t=2021-05-27T09:59:23+0300 lvl=info msg="migrations completed" logger=migrator performed=0 skipped=279 duration=1.618ms
+t=2021-05-27T09:59:23+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2021-05-27T09:59:23+0300 lvl=info msg="Registering plugin" logger=plugins id=input
+t=2021-05-27T09:59:23+0300 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2021-05-27T10:06:59+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:06:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/16 status=404 remote_addr=127.0.0.1 time_ms=92 size=28 referer=
+t=2021-05-27T10:07:01+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:07:01+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/16 status=404 remote_addr=127.0.0.1 time_ms=735 size=28 referer=
+t=2021-05-27T10:07:01+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:07:01+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/16 status=500 remote_addr=127.0.0.1 time_ms=57 size=35 referer=
+t=2021-05-27T10:07:01+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/16 status=404 remote_addr=127.0.0.1 time_ms=67 size=49 referer=
+t=2021-05-27T10:10:40+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T10:10:40+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=63 size=29 referer=
+t=2021-05-27T10:10:41+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:10:41+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/15 status=404 remote_addr=127.0.0.1 time_ms=45 size=28 referer=
+t=2021-05-27T10:10:41+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:10:41+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/15 status=500 remote_addr=127.0.0.1 time_ms=90 size=35 referer=
+t=2021-05-27T10:10:41+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/15 status=404 remote_addr=127.0.0.1 time_ms=41 size=49 referer=
+t=2021-05-27T10:15:51+0300 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2021-05-27T10:15:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=15 size=29 referer="http://localhost:3000/?orgId=1"
+t=2021-05-27T10:15:57+0300 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2021-05-27T10:16:33+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T10:16:33+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=68 size=29 referer=
+t=2021-05-27T10:16:33+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:16:33+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/15 status=404 remote_addr=127.0.0.1 time_ms=53 size=28 referer=
+t=2021-05-27T10:16:33+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:16:33+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/15 status=500 remote_addr=127.0.0.1 time_ms=41 size=35 referer=
+t=2021-05-27T10:16:33+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/15 status=404 remote_addr=127.0.0.1 time_ms=44 size=49 referer=
+t=2021-05-27T10:17:31+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams status=404 remote_addr=[::1] time_ms=2 size=23 referer=
+t=2021-05-27T10:17:31+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=29 size=32866 referer=http://localhost:3000/api/teams
+t=2021-05-27T10:20:23+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams status=404 remote_addr=[::1] time_ms=4 size=23 referer=
+t=2021-05-27T10:20:39+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:20:39+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/1 status=404 remote_addr=[::1] time_ms=16 size=28 referer=
+t=2021-05-27T10:20:43+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:20:43+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/14 status=404 remote_addr=[::1] time_ms=3 size=28 referer=
+t=2021-05-27T10:21:24+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:24+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/14 status=404 remote_addr=[::1] time_ms=6 size=28 referer=
+t=2021-05-27T10:21:27+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/15 status=404 remote_addr=[::1] time_ms=8 size=28 referer=
+t=2021-05-27T10:21:30+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:30+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/13 status=404 remote_addr=[::1] time_ms=10 size=28 referer=
+t=2021-05-27T10:21:37+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:37+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/16 status=404 remote_addr=[::1] time_ms=6 size=28 referer=
+t=2021-05-27T10:21:41+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:41+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/15 status=404 remote_addr=[::1] time_ms=4 size=28 referer=
+t=2021-05-27T10:21:44+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:44+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/13 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-27T10:21:48+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:48+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/12 status=404 remote_addr=[::1] time_ms=5 size=28 referer=
+t=2021-05-27T10:21:53+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:53+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/15 status=404 remote_addr=[::1] time_ms=26 size=28 referer=
+t=2021-05-27T10:21:57+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=[::1]
+t=2021-05-27T10:21:57+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/10 status=404 remote_addr=[::1] time_ms=3 size=28 referer=
+t=2021-05-27T10:49:08+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:49:11+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/20 status=404 remote_addr=127.0.0.1 time_ms=2208 size=28 referer=
+t=2021-05-27T10:49:13+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:49:13+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/20 status=404 remote_addr=127.0.0.1 time_ms=659 size=28 referer=
+t=2021-05-27T10:49:14+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:49:14+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/20 status=500 remote_addr=127.0.0.1 time_ms=455 size=35 referer=
+t=2021-05-27T10:49:15+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/20 status=404 remote_addr=127.0.0.1 time_ms=364 size=49 referer=
+t=2021-05-27T10:50:58+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T10:50:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=989 size=29 referer=
+t=2021-05-27T10:51:00+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:51:00+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=198 size=28 referer=
+t=2021-05-27T10:51:01+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:51:01+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/19 status=500 remote_addr=127.0.0.1 time_ms=195 size=35 referer=
+t=2021-05-27T10:51:01+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=140 size=49 referer=
+t=2021-05-27T10:53:18+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T10:53:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=1418 size=29 referer=
+t=2021-05-27T10:53:20+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:53:20+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=284 size=28 referer=
+t=2021-05-27T10:53:21+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T10:53:21+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/19 status=500 remote_addr=127.0.0.1 time_ms=360 size=35 referer=
+t=2021-05-27T10:53:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=254 size=49 referer=
+t=2021-05-27T11:42:35+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T11:42:35+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=162 size=29 referer=
+t=2021-05-27T11:42:36+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:42:36+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/20 status=404 remote_addr=127.0.0.1 time_ms=99 size=28 referer=
+t=2021-05-27T11:42:37+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:42:37+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/20 status=500 remote_addr=127.0.0.1 time_ms=135 size=35 referer=
+t=2021-05-27T11:42:37+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/20 status=404 remote_addr=127.0.0.1 time_ms=74 size=49 referer=
+t=2021-05-27T11:43:02+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T11:43:02+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=38 size=29 referer=
+t=2021-05-27T11:43:02+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:43:02+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=44 size=28 referer=
+t=2021-05-27T11:43:03+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:43:03+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/19 status=500 remote_addr=127.0.0.1 time_ms=108 size=35 referer=
+t=2021-05-27T11:43:03+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/19 status=404 remote_addr=127.0.0.1 time_ms=67 size=49 referer=
+t=2021-05-27T11:43:28+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T11:43:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=48 size=29 referer=
+t=2021-05-27T11:44:08+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:44:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/23 status=404 remote_addr=127.0.0.1 time_ms=55 size=28 referer=
+t=2021-05-27T11:44:08+0300 lvl=eror msg="Team not found" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:44:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/teams/23 status=404 remote_addr=127.0.0.1 time_ms=65 size=28 referer=
+t=2021-05-27T11:44:08+0300 lvl=eror msg="Failed to update Team" logger=context userId=1 orgId=1 uname=admin error="team not found" remote_addr=127.0.0.1
+t=2021-05-27T11:44:08+0300 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=PUT path=/api/teams/23 status=500 remote_addr=127.0.0.1 time_ms=49 size=35 referer=
+t=2021-05-27T11:44:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/23 status=404 remote_addr=127.0.0.1 time_ms=48 size=49 referer=
+t=2021-05-27T11:56:27+0300 lvl=eror msg="Team name taken" logger=context userId=1 orgId=1 uname=admin error="team name is taken" remote_addr=127.0.0.1
+t=2021-05-27T11:56:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/teams status=409 remote_addr=127.0.0.1 time_ms=82 size=29 referer=
+t=2021-05-27T11:56:30+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/0 status=404 remote_addr=127.0.0.1 time_ms=74 size=49 referer=
+t=2021-05-27T11:57:09+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=DELETE path=/api/teams/0 status=404 remote_addr=127.0.0.1 time_ms=59 size=49 referer=

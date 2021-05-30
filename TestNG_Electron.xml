@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="Electron suite">
+    <test name="Electron Tests">
+        <parameter name="PlatformName" value="electron" />
+    <!--
+           <packages>
+               <package name = "sanity"></package>
+           </packages>
+           <classes>
+           -->
+    <classes>
+    <class name="sanity.TodoListElectron"/>
+    <!--
+           <methods>
+               <include name = "test01_verifyHeader"/>   tag that doesn't include content can end with
+               <exclude name = "test02_checkRequiredField_AddNewUser"/>
+           </methods>
+   -->
+</classes>
+</test>
+</suite>
+
+
+

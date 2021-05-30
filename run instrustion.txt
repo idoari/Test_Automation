@@ -1,0 +1,28 @@
+=== web===
+no need to run anything
+web - inspect new element ctrl+shft + i
+
+=== mobile === 
+an andriod phone must be connected
+mobile - inspect driver using appium studio
+
+=== api ===
+run <project folder>\grafana-7.5.7\bin\grafana-server.exe
+
+=== ElectronDriver ===
+no need to run anything
+inspect new element ctrl+shft + i
+
+=== WinAPPDriver ===
+run C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe
+inspect new element with C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86
+
+=== junkins ===
+java -jar jenkins.war --httpPort=9090
+password
+a7784734194b43509b623d300c115c95 (see in dos screen)
+http://localhost:9090/
+
+buid now - run the job
+schedual configure > buid triggers > build periodically > use CRON language
+minHourDAYinMonthMonthWeekday (the day starts in monday)

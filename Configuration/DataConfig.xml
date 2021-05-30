@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+
+    <!-- Timeout -->
+    <TimeOut>2</TimeOut>
+
+    <!-- general -->
+   <!-- <PlatformName>web</PlatformName>  web/mobile/server/desktop -->
+
+
+    <!-- web -->
+    <BrowserName>Chrome</BrowserName> <!--> // chrome/firefox/ie -->
+    <URL>https://opensource-demo.orangehrmlive.com/</URL>
+    <imageRepository>C:\Automation\FinalProject\imageRepository\</imageRepository>
+    <USERNAME>Admin</USERNAME>
+    <PASSWORD>admin123</PASSWORD>
+
+    <!-- mobile -->
+    <UDID>520005d7ecd894ab</UDID>
+    <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+
+    -----WhatsAPP
+    <WhatsAPP_APPPackage>com.whatsapp</WhatsAPP_APPPackage>
+    <WhatsAPP_MS_APPActivity>.Main</WhatsAPP_MS_APPActivity>
+    <WhatsAPP_message_1>Hi X, How are you? I'm happy to inform you we got your resume for the position Y, and we're reviewing it as we speak. If we find you compatible, we'll call you to get to know you better :) Have a great day. </WhatsAPP_message_1>
+    <WhatsAPP_message_2>Hi X, It was nice talking to you :) As agreed, we scheduled an interview with the team leader on Monday at 9:00. Our address is 10 Medinat Ha'Yehudim st., Herzliya. Parking is possible at the building parking-lot. For further information, don't hesitate to contact me. Looking forward to meet you :)</WhatsAPP_message_2>
+    <WhatsAPP_message_3>Hi X, It was a pleasure meeting you. I've talked with your interviewer and we want to move forward and schedule another interview with one of our managers. We'll contact you in a few moments to close in on the details.</WhatsAPP_message_3>
+    <WhatsAPP_message_4>Hi X, How is your day? I'm happy to inform you that you left a good impression on our manager and we decided to move forward to HR. We'll contact you in a few moments to close in on the details. See you then :)</WhatsAPP_message_4>
+    <WhatsAPP_message_5>Hi X, How you doing? I'm very excited to inform you that you got the job. Welcome to our family. We'll be meeting on Sunday at 9:00 for your first day with us. See you soon :)</WhatsAPP_message_5>
+    <WhatsAPP_message_0>Hi X, It was very nice to meet you. Unfortunately you haven't been found suitable for the position. If a position that does fit your credentials will appear, we will be more than happy to contact you. Thanks and have a great day.</WhatsAPP_message_0>
+    <Recieved_img>\imageRepository\blueV.png</Recieved_img>
+    <Recieved_img2>\imageRepository\greyV.png</Recieved_img2>
+
+    <!--> API URLs (url should end with / ) -->
+    <API_BASE>http://localhost:3000/</API_BASE>
+    <API_GET>api/teams/search?query=</API_GET>
+    <API_POST>api/teams</API_POST>
+    <API_PUT>api/teams</API_PUT>
+    <API_DELETE>/api/teams/</API_DELETE>
+    <API_USERNAME>admin</API_USERNAME>
+    <API_PASSWORD>admin123</API_PASSWORD>
+
+    <!--> Electron -->
+    <ElectronDriverPath>./Drivers/electron.exe</ElectronDriverPath>
+    <ElectronAppPath>C:/Users/Aricha/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
+
+    <!--> desktop -->
+    <calc_app>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</calc_app>
+    <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
+
+    <!--> db -->
+    <db_URL>jdbc:mysql://remotemysql.com:3306/1vhfrL33Wp</db_URL>   <!--> jdbc:mysql://<server url>:<port>/<databasename> -->
+    <db_User>1vhfrL33Wp</db_User>
+    <db_Pass>XXASkuxAiE</db_Pass>
+
+    <!-->  data driven testing -->
+    <DDTFile>.\DDTFiles\contactList.csv</DDTFile>
+
+</Environment>

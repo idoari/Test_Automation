@@ -1,0 +1,1 @@
+t=2021-05-28T13:50:09+0300 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"

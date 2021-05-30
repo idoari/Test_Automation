@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="API suite">
+    <test name="API Tests">
+        <parameter name="PlatformName" value="api" />
+    <!--
+           <packages>
+               <package name = "sanity"></package>
+           </packages>
+           <classes>
+           -->
+    <classes>
+    <class name="sanity.GrafanaRestAPI"/>
+    <!--
+           <methods>
+               <include name = "test01_verifyHeader"/>   tag that doesn't include content can end with
+               <exclude name = "test02_checkRequiredField_AddNewUser"/>
+           </methods>
+   -->
+</classes>
+</test>
+</suite>
+
+
+

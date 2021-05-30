@@ -1,0 +1,1 @@
+t=2021-05-22T20:58:44+0300 lvl=eror msg="Failed to send usage stats" logger=metrics err="Post \"https://stats.grafana.org/grafana-usage-report\": net/http: TLS handshake timeout (Client.Timeout exceeded while awaiting headers)"
