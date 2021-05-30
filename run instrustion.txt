@@ -1,19 +1,19 @@
 here is a list of the supported project's platforms.
 Some platforms needs to run an exe file in order to run correctly.
 
-=== web ===
-no need to run anything
+=== Web ===
+No need to run anything.
 
-=== mobile === 
+=== Mobile === 
 An andriod phone must be connected to the usb port.
 
-=== api ===
-run <project folder>\grafana-7.5.7\bin\grafana-server.exe
+=== API ===
+Run <project folder>\grafana-7.5.7\bin\grafana-server.exe
 
 === Electron ===
-no need to run anything
+No need to run anything.
 
 === WinAPP ===
-run <PROGRAM FILES 86X>\Windows Application Driver\WinAppDriver.exe
+Run <PROGRAM FILES 86X>\Windows Application Driver\WinAppDriver.exe
 
 
