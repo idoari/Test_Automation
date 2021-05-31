@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68f2aaa5-6081-4006-adce-8f953de122fa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/utilities/Base.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1nYrvdHURgA1QfABDsweGHq6H9d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\FinalProject\Drivers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\FinalProject\DDTFiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/FinalProject/TestNG_API.xml">
+    <configuration name="C:/FinalProject/TestNG_API.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG_API.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/FinalProject/TestNG_Desktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG_Desktop.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/FinalProject/TestNG_Electron.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG_Electron.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/FinalProject/TestNG_mobile.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG_mobile.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrafanaRestAPI" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity" />
+      <option name="MAIN_CLASS_NAME" value="sanity.GrafanaRestAPI" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/FinalProject/TestNG_API.xml" />
+        <item itemvalue="TestNG.C:/FinalProject/TestNG_Electron.xml" />
+        <item itemvalue="TestNG.C:/FinalProject/TestNG_Desktop.xml" />
+        <item itemvalue="TestNG.GrafanaRestAPI" />
+        <item itemvalue="TestNG.C:/FinalProject/TestNG_mobile.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68f2aaa5-6081-4006-adce-8f953de122fa" name="Default Changelist" comment="" />
+      <created>1611578102362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611578102362</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FinalProject$CalculatorDesktop.ic" NAME="CalculatorDesktop Coverage Results" MODIFIED="1620895580336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sanity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FinalProject$CalculatorDesktop_add1.ic" NAME="CalculatorDesktop.add1 Coverage Results" MODIFIED="1620901516297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sanity.*</FILTER>
+    </SUITE>
+  </component>
+</project>
