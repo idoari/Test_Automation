@@ -20,7 +20,6 @@ public class ApiActions extends CommonOps {
         httpRequest.header("Content-Type","application/json");
         httpRequest.body(params.toJSONString());
         response = httpRequest.post(resource);
-        response.prettyPrint();
         Assert.assertEquals(response.statusCode(),200,"Unexpected Error Code " + response.statusCode());
     }
 
@@ -35,7 +34,7 @@ public class ApiActions extends CommonOps {
     @Step("Delete Data From Server")
     public static void delete(String url,String id) {
         response = httpRequest.delete(url + id);
-        Assert.assertEquals(response.statusCode(),204,"Unexpected Error Code " + response.statusCode());
+        Assert.assertEquals(response.statusCode(),200,"Unexpected Error Code " + response.statusCode());
     }
 
     @Step("extract specific value From JSON")
