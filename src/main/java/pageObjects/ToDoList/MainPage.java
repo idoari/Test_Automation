@@ -16,6 +16,15 @@ public class MainPage {
     @FindBy(how = How.CLASS_NAME, using = "destroy_19w1q")
     public List<WebElement> x;
 
+    @FindBy(how = How.CLASS_NAME, using = "downArrowIcon_3Zu5N")
+    public WebElement btn_color;
+
+    @FindBy(how = How.XPATH, using = "//div[@class = 'wrapper_3Kpfj vertical_di1oV tagList_2NRe0']/span")
+    public List<WebElement> color_menu;
+
+
+
+
 
 
 
