@@ -5,7 +5,7 @@ import utilities.CommonOps;
 
 public class DesktopFlows extends CommonOps {
 
-    @Step("simulate num click")
+    @Step("Business flow : simulate num click")
     public static void numClick(String num) {
         for (int i=0 ; i < num.length(); i++) {
             switch (num.charAt(i)) {
@@ -46,7 +46,7 @@ public class DesktopFlows extends CommonOps {
         }
     }
 
-    @Step("calculate Addition")
+    @Step("Business flow : calculate addition")
     public static String addition(String num1 , String num2) {
         UIActions.Click(CalcMain.btn_clear);
         numClick(num1);
@@ -56,7 +56,7 @@ public class DesktopFlows extends CommonOps {
         return CalcMain.txt_results.getText();
     }
 
-    @Step("calculate subtract")
+    @Step("Business flow : calculate subtraction")
     public static String subtract(String num1 , String num2) {
         UIActions.Click(CalcMain.btn_clear);
         numClick(num1);
@@ -66,7 +66,7 @@ public class DesktopFlows extends CommonOps {
         return CalcMain.txt_results.getText();
     }
 
-    @Step("calculate addition")
+    @Step("Business flow : calculate multiplication")
     public static String multiply(String num1 , String num2) {
         UIActions.Click(CalcMain.btn_clear);
         numClick(num1);
@@ -76,7 +76,7 @@ public class DesktopFlows extends CommonOps {
         return CalcMain.txt_results.getText();
     }
 
-    @Step("calculate addition")
+    @Step("Business flow : calculate division")
     public static String divide(String num1 , String num2) {
         UIActions.Click(CalcMain.btn_clear);
         numClick(num1);
