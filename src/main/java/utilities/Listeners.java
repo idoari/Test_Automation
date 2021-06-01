@@ -68,8 +68,7 @@ public class Listeners extends CommonOps implements ITestListener {
 
         System.out.println("--------------------------------Test: " + test.getName() + " failed---------------");
         if (!platform.equalsIgnoreCase("api")) { //api has no GUI
-            saveScreenshot();
-
+            //saveScreenshot();
             //stop recording
             try {
                 monteScreenRecorder.stopRecord();

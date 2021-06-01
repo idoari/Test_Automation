@@ -3,11 +3,16 @@ package utilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.windows.WindowsDriver;
+import io.appium.java_client.windows.WindowsElement;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -75,11 +80,13 @@ public class CommonOps extends Base {
     }
 
     public static void initDesktop() {
-        dc.setCapability("app",getData("calc_app"));
+        dc.setCapability("app", getData("calc_app"));
+        dc.setCapability("deviceName", "WindowsPC");
         try {
-            driver = new WindowsDriver(new URL(getData("AppiumServerDesktop")),dc);
-        } catch (MalformedURLException e) {
-            System.out.println("cannot connect to appium server. see details : " + e);
+            driver = new WindowsDriver<>(new URL(getData("AppiumServerDesktop")), dc);
+
+        } catch (Exception e) {
+            System.out.println("error" + e);
         }
         wait = new WebDriverWait(driver,Long.parseLong(getData("TimeOut")));
         action = new Actions(driver);
@@ -88,30 +95,22 @@ public class CommonOps extends Base {
 
     public static void initElectron() {
         System.setProperty("webdriver.chrome.driver", getData("ElectronDriverPath"));
-         driver = new ChromeDriver();
-/*
         ChromeOptions opt = new ChromeOptions();
-        ChromeDriverService service = new ChromeDriverService.Builder().usingDriverExecutable(new File("./chromedriver.exe")).usingAnyFreePort().build();
-        dc.setCapability("chromeOptions",opt);
-        dc.setBrowserName("chrome");
+        ChromeDriverService service = new ChromeDriverService.Builder().build();
         opt.setBinary(getData("ElectronAppPath"));
-        opt.merge(dc);
-        ChromeDriver driver = new ChromeDriver(service, opt);
+        driver = new ChromeDriver(service, opt);
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("TimeOut")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,Long.parseLong(getData("TimeOut")));
         action = new Actions(driver);
-
- */
-        //ManagePages.initTodo();
+        ManagePages.initTodo();
     }
 
     private static void initAPI() {
         RestAssured.baseURI = getData("API_BASE");
-        httpRequest = RestAssured.given().auth().preemptive().basic("username","password");
+        httpRequest = RestAssured.given().auth().preemptive().basic(getData("API_USERNAME"),getData("API_PASSWORD"));
     }
 
     public static void initMobile() {
-
         dc.setCapability(MobileCapabilityType.UDID, getData("UDID"));
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getData("WhatsAPP_APPPackage"));
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getData("WhatsAPP_MS_APPActivity"));
@@ -123,8 +122,6 @@ public class CommonOps extends Base {
         }
         mobileDriver.manage().timeouts().implicitlyWait(Long.parseLong(getData("TimeOut")), TimeUnit.SECONDS);
         wait = new WebDriverWait(mobileDriver,Long.parseLong(getData("TimeOut")));
-
-
         candidate_list = ManageDDT.getDataFromCSV(getData("DDTFile")); //read all users list
         ManagePages.initWhatsApp();
 
@@ -195,7 +192,7 @@ public class CommonOps extends Base {
             driver.get(getData("URL"));
         }
         else if (platform.equalsIgnoreCase("electron")) {
-            ElectronFlows.EmptyTaskList();
+            ElectronFlows.EmptyTaskList(); //erase all tasks after each test
         }
     }
 
